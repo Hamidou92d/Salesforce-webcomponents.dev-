@@ -1,0 +1,18 @@
+<template>
+    <div id="waiting" if:false={ready}>Loading…</div>
+    <div id="display" if:true={ready}>
+        <div>Name: {name}</div>
+        <div>Description: {description}</div>
+        <div>Category: {category}</div>
+        <div>Material: {material}</div>
+        <div>Price: {price}</div>
+        <div><img src={pictureUrl}/></div>
+    </div>
+</template>
+
+<!-- 
+You can use if:false and if:true conditional directives within your template to determine which visual elements are rendered.
+The content in the “display” div tag doesn’t appear until the value of ready is true in the HTML file. 
+
+
+-->
